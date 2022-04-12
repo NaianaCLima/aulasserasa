@@ -4,14 +4,14 @@ public class Conta {
 
 	private int agencia;
 	private int numConta;
-	private double saldo;
-	private String titular;
+	protected double saldo;
+	private PessoaHeranca titular;
 
 	public Conta() {
 
 	}
 
-	public Conta(int agencia, int numConta, String titular) {
+	public Conta(int agencia, int numConta, PessoaHeranca titular) {
 		this.agencia = agencia;
 		this.numConta = numConta;
 		this.titular = titular;
@@ -44,11 +44,11 @@ public class Conta {
 		return false;
 	}
 
-	public String getTitular() {
+	public PessoaHeranca getTitular() {
 		return titular;
 	}
 
-	public void setTitular(String titular) {
+	public void setTitular(PessoaHeranca titular) {
 		this.titular = titular;
 	}
 
